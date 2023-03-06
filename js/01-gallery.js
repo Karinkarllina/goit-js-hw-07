@@ -41,10 +41,10 @@ galleryEl.addEventListener('keydown', galleryClose);
 
 function galleryClose(event) {
     if (event.code === "Escape") {
-        instance.close();
+      instance.close();
+      galleryEl.removeEventListener('keydown', galleryClose);
     }
-}
-    
+} 
 }
 
 
